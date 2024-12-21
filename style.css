@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #004aad;
+    color: #fff;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 2px solid #004aad;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#chatbot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #004aad;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+#chat-display {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow: hidden;
+}
+
+#chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+#chat-messages div {
+    margin: 5px 0;
+}
+
+.user-message {
+    text-align: right;
+    color: #004aad;
+}
+
+.bot-message {
+    text-align: left;
+    color: #333;
+}
+
+#chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+
+#chat-input input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#chat-input button {
+    background: #004aad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.hidden {
+    display: none;
+}
+/* Custom styles for the chatbot */
+#chatbot-container {
+    width: 350px;
+    z-index: 1050; /* Ensure it stays above other elements */
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.user-message {
+    text-align: right;
+    background-color: #e9f5ff;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 70%;
+    margin-left: auto;
+    color: #004aad;
+}
+
+.bot-message {
+    text-align: left;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    max-width: 70%;
+    margin-right: auto;
+    color: #333;
+}
